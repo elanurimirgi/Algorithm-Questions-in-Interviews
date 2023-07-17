@@ -1,0 +1,16 @@
+# SOLUTION 1: just use array method 
+array = ["ab", "ac", "ab", "ab", "ad", "ac"]
+new_array = []
+
+for item in array:
+    if item not new_array:
+        new_array.append(item)
+
+new_array.sort()
+print(new_array)
+
+# SOLUTION 2: use set method 
+array = ["ab","ac","ab","ab","ad","ac"]
+new_array = {}
+new_array = sorted(set(array))
+print(new_array)
