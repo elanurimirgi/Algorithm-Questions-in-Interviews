@@ -1,2 +1,2 @@
 # Algorithm-Questions-in-Interviews
-Mülakatlarda sorulan algoritma sorularını çözdüğüm repo
+A repository where I solve algorithm questions frequently asked in interviews.
