@@ -1,0 +1,24 @@
+# Way 1
+dizi = [10,5,7,8,12]
+
+k = int(input())
+for i in range(len(dizi)):
+    for n in range(len(dizi)):
+        if dizi[i] + dizi[n] == k:
+            print(dizi[i], dizi[n])
+
+# Way 2
+dizi = [10, 5, 7, 8, 12, 15]
+k = int(input())
+index = len(dizi) - 1
+i = 0
+for i in range(len(dizi)):
+    if dizi[i] + dizi[index] > k:
+        index -= 1
+    elif dizi[i] + dizi[index] < k:
+        i += 1
+    else:
+        print(dizi[i], dizi[index])
+        break
+
+
