@@ -1,0 +1,23 @@
+#Way 1
+array = [1,2,3,4,5]
+multiplication = 1
+multiplication_array = []
+for i in array:
+     multiplication = 1
+     for j in array:
+          if j != i :
+              multiplication *= j
+     multiplication_array.append(multiplication)
+print(multiplication_array)
+
+#Way 2
+array = [1, 2, 3, 4, 5]
+multiplication_array = []
+
+for i in array:
+    multiplication = 1
+    for j in array:
+        multiplication *= j
+    multiplication_array.append(multiplication // i)
+
+print(multiplication_array) 
