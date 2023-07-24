@@ -1,0 +1,19 @@
+N = int(input())
+
+empty_dict = {}
+for i in range(N):
+    key = input("key:")
+    value = input("Value:")
+    empty_dict[key] = value
+
+
+index = int(input(""Which element do you want from the end?"))
+   
+
+reversed_dict = dict(reversed(list(empty_dict.items())))
+keys = list(reversed_dict.keys())
+values = list(reversed_dict.values())
+
+print(f"{index}. sondan eleman:")
+print("Key:", keys[index - 1])
+print("Value:", values[index - 1])
