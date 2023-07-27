@@ -1,0 +1,17 @@
+def solution(N):
+    binary_num = bin(N)[2:]
+    bin_num_str = str(binary_num)
+    ones_positions = [i for i, bit in enumerate(bin_num_str) if bit == '1']
+    max_zero_count = 0
+
+    for i in range(len(ones_positions) - 1):
+        zero_count = ones_positions[i + 1] - ones_positions[i] - 1
+        if zero_count > max_zero_count:
+            max_zero_count = zero_count
+           
+    return max_zero_count
+
+N = int(input("Please enter a number: "))
+result = solution(N)
+print("Longest zeros array: ", result)
+
